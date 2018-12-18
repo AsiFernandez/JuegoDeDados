@@ -33,8 +33,10 @@ public class JuegoDeDados
         
        if(j1 > j2) {
     	   System.out.println("El jugador 1 ha ganado");
-       }else {
+       }else if(j1 < j2) {
     	   System.out.println("El jugador 2 ha ganado");
+       }else {
+    	   System.out.println("Los Jugadores han empatado");
        }
         
     }
@@ -44,9 +46,9 @@ public class JuegoDeDados
     final static int NADA= 0;
     
     
-    public int Sumar() {
+    private int Sumar() {
     	int suma = 0;
-    	
+    	 
     	if(comprobarParejaTrio() == 3) {
     		suma = dado1.getValor() + dado2.getValor() + dado3.getValor() + 10;
     		System.out.println("la suma total es de: " + suma);
@@ -62,7 +64,7 @@ public class JuegoDeDados
     	return suma;
     }
     
-    public int comprobarParejaTrio() {
+    private int comprobarParejaTrio() {
     	
     	int trio = 3;
     	
