@@ -49,10 +49,13 @@ public class JuegoDeDados
     	
     	if(comprobarParejaTrio() == 3) {
     		suma = dado1.getValor() + dado2.getValor() + dado3.getValor() + 10;
+    		System.out.println("la suma total es de: " + suma);
     	}else if(comprobarParejaTrio() == 2) {
     		suma = dado1.getValor() + dado2.getValor() + dado3.getValor() + 5;
+    		System.out.println("la suma total es de: " + suma);
     	}else {
     		suma = dado1.getValor() + dado2.getValor() + dado3.getValor();
+    		System.out.println("la suma total es de: " + suma);
     	}
     	
     	
